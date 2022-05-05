@@ -1,0 +1,26 @@
+.hero {
+    background: None;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.swiper-container {
+    background-color: #3e7c17c5;
+    margin: 0 auto;
+    position: relative;
+    height: max-content;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    border-radius: 2%;
+    /* Fix of Webkit flickering */
+    z-index: 1;
+}
+
+.single-pricing {
+    height: 150%;
+}
