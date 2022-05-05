@@ -1,34 +1,3 @@
-/*------------------------------------------------------------------
- * Multipurpose: Free Template by FreeHTML5.co
- * Author: https://freehtml5.co
- * Facebook: https://facebook.com/fh5co
- * Twitter: https://twitter.com/fh5co
- -------------------------------------------------------------------*/
-
-
-/*------------------------------------------------------------------
-[Table of styles content]
-
-1 - Header
-2 - Hero
-3 - CTA
-4 - Services
-5 - Featured
-6 - Recent Posts
-7 - Trust
-8 - Pricing Tables
-9 - Testimonials
-10 - Clients
-11 - CTA 2
-12 - Footer Widgets
-13 - Foot Note
---------------------------------------------------------------------*/
-
-
-/*-----------------------------------
-    1 - Header
-------------------------------------*/
-
 header {
     background-color: #3e7c17;
     color: #fff;
@@ -162,11 +131,6 @@ header::after {
 .cart {
     margin-left: 20px;
 }
-
-
-/*-----------------------------------
-    1 - Hero
-------------------------------------*/
 
 .hero {
     background: url("../img/hero-bg.jpg") no-repeat center;
@@ -303,11 +267,6 @@ header::after {
     bottom: 58%;
 }
 
-
-/*-----------------------------------
-    1 - CTA
-------------------------------------*/
-
 .cta-content {
     padding: 30px 0 90px;
     color: #fff;
@@ -332,11 +291,6 @@ header::after {
     align-self: flex-end;
     margin-right: 30px;
 }
-
-
-/*-----------------------------------
-    1 - Services
-------------------------------------*/
 
 .title {
     font-weight: 700;
@@ -378,11 +332,6 @@ header::after {
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
-
-
-/*-----------------------------------
-    1 - Featured
-------------------------------------*/
 
 .featured {
     padding: 80px 0;
@@ -426,11 +375,6 @@ header::after {
     padding: 25px 25px 0 0;
     background-color: #fff;
 }
-
-
-/*-----------------------------------
-    1 - Recent Posts
-------------------------------------*/
 
 .recent-posts {
     padding: 65px 0 100px;
@@ -503,11 +447,6 @@ header::after {
     color: #fff;
     background-color: #ee1515;
 }
-
-
-/*-----------------------------------
-    1 - Trust
-------------------------------------*/
 
 .trust {
     padding: 75px 0;
@@ -594,11 +533,6 @@ header::after {
     top: -50%;
     left: 50%;
 }
-
-
-/*-----------------------------------
-    1 - Pricing Table
-------------------------------------*/
 
 .pricing-table {
     padding: 100px 0;
@@ -712,11 +646,6 @@ header::after {
     background: #F4A442;
 }
 
-
-/*-----------------------------------
-    1 - Testimonials
-------------------------------------*/
-
 .testimonial-and-clients {
     background: url(../img/test-clients-bg.png) center center/cover no-repeat #ee1515;
 }
@@ -786,11 +715,6 @@ header::after {
     background-color: white;
 }
 
-
-/*-----------------------------------
-    1 - Clients
-------------------------------------*/
-
 .clients {
     padding: 70px 0;
 }
@@ -799,28 +723,13 @@ header::after {
     text-align: center;
 }
 
-
-/*-----------------------------------
-    1 - CTA 2
-------------------------------------*/
-
 .cta2 {
     margin: 50px 0 -30px;
 }
 
-
-/*-----------------------------------
-    1 - Footer
-------------------------------------*/
-
 footer {
     background: url(../img/footer-bg.png) center center/cover no-repeat #26264b;
 }
-
-
-/*-----------------------------------
-    1 - Footer Widgets
-------------------------------------*/
 
 .footer-widgets {
     padding: 100px 0;
@@ -987,11 +896,6 @@ span {
 .subscribe-widget .social-nav a:hover {
     background-color: #ee1515;
 }
-
-
-/*-----------------------------------
-    1 - Foot Note
-------------------------------------*/
 
 .foot-note {
     padding: 35px 0;
