@@ -1,14 +1,16 @@
 const express = require("express");
+const https = require('http');
 const { json } = require("express/lib/response");
 const res = require("express/lib/response");
-const mysql = require("mysql");
-const exphbs = require('express-handlebars');
+// const mysql = require("mysql");
+// const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const app = express();
 const expressLayouts = require("express-ejs-layouts");
 const { request } = require("express");
 const { urlencoded } = require("body-parser");
 const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+var port = process.env.PORT || 3000;
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -23,26 +25,26 @@ app.use('/css', express.static(__dirname + 'public/css'))
 app.use('/js', express.static(__dirname + 'public/js'))
 app.use('/img', express.static(__dirname + 'public/img'))
 
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'MyNewPass'
-})
+// const db = mysql.createConnection({
+//     host: 'localhost',
+//     user: 'root',
+//     password: 'MyNewPass'
+// })
 
 
-db.connect(err => {
-    if (err) {
-        throw err
-    }
-    console.log('Mysqlconnted')
-})
-let sql = "USE disproject";
-db.query(sql, (err) => {
-    if (err) {
-        throw err;
-    }
-    console.log("connected")
-})
+// db.connect(err => {
+//     if (err) {
+//         throw err
+//     }
+//     console.log('Mysqlconnted')
+// })
+// let sql = "USE disproject";
+// db.query(sql, (err) => {
+//     if (err) {
+//         throw err;
+//     }
+//     console.log("connected")
+// })
 
 app.get('', (req, res) => {
     var result = [{ 'releaseco': 350, 'submitdate': "14 MARCH 2022" }, { 'releaseco': 300, 'submitdate': "16 MARCH 2022" },
@@ -79,7 +81,6 @@ app.get('/datatransport', async(req, res) => {
     // })
 
     var arry = [];
-    var i = 0;
     arry.push(carbon);
 
     if (data.card > data.biked) {
@@ -145,6 +146,6 @@ app.get('/articles', (req, res) => {
 app.get('/sug', (req, res) => {
     res.render("suggestion");
 })
-app.listen('5001', () => {
+app.listen(port, () => {
     console.log("connected")
 })
